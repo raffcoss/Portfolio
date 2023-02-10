@@ -1,0 +1,502 @@
+/*****font-family: 'Playfair Display', serif;***/
+/*****#b83c3c rosso *****/
+
+*{
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+    margin: 0 0;
+    padding: 0 0;
+    scroll-behavior: smooth;
+  }
+  
+  html{
+      width: 100%;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(to right bottom, #ffffff, #e8e8e8, #d2d2d2, #bcbcbc, #a6a6a6);
+  
+  }
+  
+  .navbar{
+      width: 100%;
+      height: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  #me{
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      margin: 80px 10px 0 60px;
+  }
+  
+  .nav-menu{
+      display: flex;
+      list-style: none;
+  }
+  
+  .hamburger{
+      display: none;
+      cursor: pointer;
+  }
+  
+  .bar{
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: black;
+  }
+  
+  
+  
+  .navlist{
+      padding-right: 60px;
+      padding-left: 40px;
+      font-size: 20px;
+      white-space: nowrap;
+      text-decoration: none;
+      color: black;
+      font-weight: 700;
+      letter-spacing: 2px;
+  }
+  
+  h1{
+      font-size: 32px;
+  }
+  
+  #myname{
+      list-style: none;
+      text-decoration: none;
+      color: black;
+      margin-right: 80px;
+  }
+  
+  #homepage{
+      text-align: center;
+      font-size: 70px;
+      font-weight: 400;
+      margin-top: 120px;
+  }
+  
+  /*****about me*****/
+  
+  
+  .infocontainer{
+    display: flex;
+    width: 100%;
+    margin-top: 380px;
+  }
+  
+  #aboutme{
+      margin-left: 60px;
+      font-size: 48px;
+      font-weight: 600;
+      border-right: 5px solid #b83c3c;
+      height: 260px;
+      padding-right: 30px;
+  }
+  
+  #info{
+      margin-top: 60px;
+      margin-left: 30px;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 45px;
+  }
+  
+  .infohighlights{
+      margin: 0 0;
+      color: #b83c3c;
+      display: inline;
+  }
+  
+  /****contact me****/
+  .contactcontainer{
+      display: flex;
+      flex-direction: row-reverse;
+      margin-right: 178px;
+      margin-top: 120px;
+  }
+  
+  #contactme{
+      font-size: 48px;
+      font-weight: 600;
+      border-left: 5px solid #b83c3c;
+      height: 260px;
+      padding-left: 30px;
+  }
+  
+  .contactcolumn{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 60px 30px 0 0;
+  }
+  
+  .contacts{
+      color: black;
+      font-size: 25px;
+      text-decoration: none;
+      line-height: 45px;
+  }
+  
+  /****FOOTER****/
+  
+  .footer{
+      margin-top: 120px;
+      background-color: black;
+      height: 200px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+  }
+  
+  .footer-name{
+      width: 50%;
+      border-right: white 3px solid;
+      padding: 35px 0;
+  }
+  
+  .name-job{
+      color: #ffffff;
+      font-size: 22px;
+      text-align: center;
+  }
+  
+  .footer-icons{
+      width: 50%;
+      float: right;
+      display: flex;
+      justify-content: center;
+      
+  }
+  
+  .icons{
+      width: 40px;
+      height: 40px;
+      margin: 0 15px;
+  }
+  
+  
+  /****NAVBAR****/
+  
+  ::-webkit-scrollbar{
+      width: 10px;
+      border-radius: 10px;
+      background-color: #28272744;
+  }
+  
+  ::-webkit-scrollbar:hover{
+      background-color: #38383844;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+      border-radius: 10px;
+      background-color: #858484c4;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover{
+      background-color: #888888;
+  }
+  
+  
+  /****media query <1400****/
+  
+  @media screen and (max-width:1400px) {
+      #me{
+          width: 180px;
+          height: 180px;
+          margin-top: 65px;
+      }
+  
+      h1{
+          font-size: 30px;
+      }
+  
+      .navlist{
+          padding: 0 30px;
+      }
+  
+      #info{
+          font-size: 24px;
+      }
+  
+      #aboutme{
+          white-space: nowrap;
+          font-size: 44px;
+      }
+  
+      #contactme{
+          font-size: 44px;
+      }
+  
+      #contacts{
+          font-size: 24px;
+      }
+  }
+  
+  @media (min-width:1050px) and (max-width:1200px) {
+      
+      #me{
+          width: 155px;
+          height: 155px;
+          margin-top: 40px;
+      }
+  
+      h1{
+          margin-right: 20px;
+          font-size: 22px;
+      }
+  
+  
+      .navlist{
+          font-size: 18px;
+          padding: 0 25px;
+      }
+  
+  
+      #aboutme{
+          font-size: 42px;
+      }
+  
+      #info{
+          margin-top: 40px;
+          font-size: 23px;
+      }
+  
+      #contactme{
+          font-size: 42px;
+      }
+  
+      #contacts{
+          font-size: 23px;
+      }
+  
+      .infocontainer{
+          margin-top: 300px;
+      }
+  
+      #homepage{
+          font-size: 60px;
+      }
+  }
+  
+  @media (min-width:900px) and (max-width:1049px){
+      #me{
+          width: 135px;
+          height: 135px;
+          margin-top: 50px;
+         margin-left: 40px;
+      }
+  
+      h1{
+          margin-right: 18px;
+          font-size: 20px;
+      }
+      
+      .navlist{
+          font-size: 17px;
+          padding: 0 20px;
+      }
+      #homepage{
+          font-size: 60px;
+      }
+  
+      #info{
+          margin-top: 35px;
+      }
+  }
+  
+  
+  @media (max-width:899px){
+      .hamburger{
+          display: block;
+      }
+  
+      .hamburger.active .bar:nth-child(2){
+          opacity: 0;
+      }
+  
+      .hamburger.active .bar:nth-child(1){
+          transform: translateY(8px) rotate(45deg);
+      }
+  
+      .hamburger.active .bar:nth-child(3){
+          transform: translateY(-8px) rotate(-45deg);
+      }
+      
+      .nav-menu{
+          padding-top: 200px;
+          height: 100%;
+          background-color: #d7d7d7d9;
+          position: fixed;
+          left: -100%;
+          top: 0;
+          gap: 0;
+          flex-direction: column;
+          width: 100%;
+          text-align: center;
+          transition: 0.3s;
+      }
+  
+      .nav-item{
+          font-size: 28px;
+          margin: 32px 0;
+      }
+  
+  
+      .nav-menu.active{
+          left: 0;
+      }
+  
+      .infocontainer{
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      #aboutme{
+          font-size: 40px;
+          margin: 0;
+          padding: 0;
+          border-right: 0;
+          height: auto;
+      }
+  
+      .contactcontainer{
+          flex-direction: column;
+          align-items: center;
+          margin: 0;
+          margin-top: 60px;
+      }
+  
+      #contactme{
+          font-size: 40px;
+          border-left: 0;
+          height: auto;
+          border-top: 5px solid #b83c3c;
+          padding-right: 30px;
+          padding-top: 60px;
+  
+         
+      }
+  
+      .contactcolumn{
+          margin-right: 0;
+      }
+  
+      #homepage{
+          margin-top: 160px;
+          font-size: 50px;
+      }
+  
+  }
+  
+  @media (max-width:650px){
+  
+   #me{
+          width: 100px;
+          height: 100px;
+          margin-top: 0;
+         margin-left: 25px;
+      }
+  
+      h1{
+          margin-right: 16px;
+          font-size: 24px;
+      }
+  
+      .nav-item{
+          font-size: 24px;
+          margin: 32px 0;
+      }
+  
+      #homepage{
+          font-size: 38px;
+          margin-top: 160px;
+          margin-right: 0;
+      }
+  
+      #infocontainer{
+          margin-top: 200px ;
+      }
+  
+      #aboutme{
+          font-size: 34px;
+      }
+  
+      #info{
+          font-size: 20px;
+      }
+      #contactme{
+          font-size: 34px;
+      }
+  
+      .contacts{
+          font-size: 20px;
+      }
+  
+      .name-job{
+          font-size: 18px;
+      }
+      .icons{
+          width: 30px;
+          height: 30px;
+      }
+  
+  }
+  
+  @media (max-width:576px) {
+  
+      #me{
+          width: 80px;
+          height: 80px;
+          margin-top: 0;
+         margin-left: 0;
+      }
+  
+      h1{
+          margin-right: 0;
+          font-size: 18px;
+      }
+  
+      #homepage{
+          font-size: 30px;
+          margin-top: 100px;
+          margin-right: 0;
+      }
+  
+      .infocontainer{
+          margin-top: 270px;
+      }
+  
+      #aboutme, #contactme{
+          font-size: 28px;
+      }
+  
+      #info, .contacts{
+          font-size: 18px;
+          line-height: 30px ;
+      }
+  
+      .nav-item{
+          font-size: 20px;
+      }
+  
+      .name-job{
+          font-size: 15px;
+      }
+  
+      .icons{
+          width: 24px;
+          height: 24px;
+      }
+  
+  
+  
+  
+  
+  }
